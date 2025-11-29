@@ -25,6 +25,13 @@
             })
         })
       }
+
+      // SPA fallback for GitHub Pages
+      const pathname = window.location.pathname
+      if (!pathname.startsWith('/Pick4pic/')) {
+        const newPath = '/Pick4pic' + pathname
+        window.history.replaceState(null, '', newPath)
+      }
     </script>
   </body>
 </html>
