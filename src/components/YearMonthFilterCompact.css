@@ -1,0 +1,184 @@
+.year-month-filter-compact {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.year-month-filter-compact__header {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.year-month-filter-compact__toggle {
+  padding: 0.5rem 1rem;
+  border: 1.5px solid #d9d1c3;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #666;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.year-month-filter-compact__toggle:hover {
+  border-color: #6d9482;
+  color: #1e3a34;
+}
+
+.year-month-filter-compact__toggle.active {
+  background: #1e3a34;
+  border-color: #1e3a34;
+  color: #fff;
+}
+
+.year-month-filter-compact__dropdown {
+  position: relative;
+}
+
+.year-month-filter-compact__trigger {
+  padding: 0.5rem 1rem;
+  border: 1.5px solid #d9d1c3;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #666;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 120px;
+  justify-content: space-between;
+}
+
+.year-month-filter-compact__trigger:hover {
+  border-color: #6d9482;
+  color: #1e3a34;
+}
+
+.year-month-filter-compact__arrow {
+  font-size: 0.7rem;
+  opacity: 0.7;
+}
+
+.year-month-filter-compact__menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  background: #fff;
+  border: 1.5px solid #d9d1c3;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  padding: 0.75rem;
+  min-width: 200px;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 100;
+  animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.year-month-filter-compact__year-section {
+  margin-bottom: 0.75rem;
+}
+
+.year-month-filter-compact__year-section:last-child {
+  margin-bottom: 0;
+}
+
+.year-month-filter-compact__year-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1e3a34;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid #e8e3d8;
+}
+
+.year-month-filter-compact__months {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.year-month-filter-compact__month-item {
+  padding: 0.4rem 0.75rem;
+  border: 1px solid #d9d1c3;
+  background: #fbf8f1;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #666;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.year-month-filter-compact__month-item:hover {
+  border-color: #6d9482;
+  background: #e8f3ef;
+  color: #1e3a34;
+}
+
+.year-month-filter-compact__month-item.active {
+  background: #1e3a34;
+  border-color: #1e3a34;
+  color: #fff;
+}
+
+.year-month-filter-compact__month-count {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+.year-month-filter-compact__menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.year-month-filter-compact__menu::-webkit-scrollbar-track {
+  background: #f7f3ec;
+  border-radius: 3px;
+}
+
+.year-month-filter-compact__menu::-webkit-scrollbar-thumb {
+  background: #d9d1c3;
+  border-radius: 3px;
+}
+
+.year-month-filter-compact__menu::-webkit-scrollbar-thumb:hover {
+  background: #c4b8a8;
+}
+
+@media (max-width: 768px) {
+  .year-month-filter-compact__header {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .year-month-filter-compact__toggle,
+  .year-month-filter-compact__trigger {
+    width: 100%;
+  }
+
+  .year-month-filter-compact__menu {
+    right: 0;
+    left: 0;
+    min-width: auto;
+  }
+}
+

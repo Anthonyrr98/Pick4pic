@@ -1,0 +1,162 @@
+.year-month-filter {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.year-month-filter__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.75rem;
+  max-width: fit-content;
+}
+
+.year-month-filter__all {
+  width: 50px;
+  height: 50px;
+  border: 1.5px solid #d9d1c3;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.year-month-filter__all:hover {
+  border-color: #6d9482;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.year-month-filter__all.active {
+  background: #1e3a34;
+  border-color: #1e3a34;
+  color: #fff;
+}
+
+.year-month-filter__all-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: inherit;
+}
+
+.year-month-filter__year-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.year-month-filter__year-title {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #1e3a34;
+  font-weight: 600;
+  white-space: nowrap;
+  min-width: 50px;
+  text-align: right;
+}
+
+.year-month-filter__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  max-width: 100%;
+}
+
+.year-month-filter__card {
+  width: 45px;
+  height: 45px;
+  border: 1.5px solid #d9d1c3;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
+}
+
+.year-month-filter__card:hover {
+  border-color: #6d9482;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.year-month-filter__card.active {
+  background: #1e3a34;
+  border-color: #1e3a34;
+  color: #fff;
+}
+
+.year-month-filter__month {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: inherit;
+  margin-bottom: 0.1rem;
+  line-height: 1.1;
+}
+
+.year-month-filter__count {
+  font-size: 0.65rem;
+  opacity: 0.8;
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .year-month-filter {
+    margin-bottom: 1.5rem;
+  }
+
+  .year-month-filter__container {
+    gap: 0.5rem;
+  }
+
+  .year-month-filter__all {
+    width: 45px;
+    height: 45px;
+  }
+
+  .year-month-filter__all-text {
+    font-size: 0.8rem;
+  }
+
+  .year-month-filter__year-group {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.3rem;
+  }
+
+  .year-month-filter__year-title {
+    font-size: 0.9rem;
+    min-width: auto;
+  }
+
+  .year-month-filter__grid {
+    gap: 0.3rem;
+  }
+
+  .year-month-filter__card {
+    width: 40px;
+    height: 40px;
+    padding: 0.25rem;
+  }
+
+  .year-month-filter__month {
+    font-size: 0.65rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .year-month-filter__count {
+    font-size: 0.6rem;
+  }
+}
+

@@ -1,0 +1,241 @@
+.comment-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e8e3d8;
+}
+
+.comment-section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.comment-section__header h3 {
+  margin: 0;
+  color: #1e3a34;
+  font-size: 1.3rem;
+}
+
+.comment-section__toggle {
+  padding: 0.5rem 1rem;
+  border: 1.5px solid #6d9482;
+  background: #fff;
+  color: #6d9482;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.comment-section__toggle:hover {
+  background: #6d9482;
+  color: #fff;
+}
+
+.comment-section__form {
+  background: #fbf8f1;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.comment-section__form-group {
+  margin-bottom: 1rem;
+}
+
+.comment-section__form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #1e3a34;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.comment-section__form-group input,
+.comment-section__form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1.5px solid #d9d1c3;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  background: #fff;
+  color: #1e3a34;
+}
+
+.comment-section__form-group input:focus,
+.comment-section__form-group textarea:focus {
+  outline: none;
+  border-color: #6d9482;
+}
+
+.comment-section__form-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}
+
+.comment-section__submit,
+.comment-section__cancel {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.comment-section__submit {
+  background: #1e3a34;
+  color: #fff;
+}
+
+.comment-section__submit:hover {
+  background: #2d5a4f;
+}
+
+.comment-section__cancel {
+  background: #f7f3ec;
+  color: #666;
+  border: 1px solid #d9d1c3;
+}
+
+.comment-section__cancel:hover {
+  background: #e8f3ef;
+}
+
+.comment-section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.comment-section__empty {
+  text-align: center;
+  color: #999;
+  padding: 2rem;
+  font-style: italic;
+}
+
+.comment-item {
+  background: #fbf8f1;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.comment-item__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.comment-item__author {
+  font-weight: 600;
+  color: #1e3a34;
+}
+
+.comment-item__date {
+  font-size: 0.85rem;
+  color: #9a8c7a;
+}
+
+.comment-item__content {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.comment-item__reply-btn {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #d9d1c3;
+  background: #fff;
+  color: #666;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+
+.comment-item__reply-btn:hover {
+  border-color: #6d9482;
+  color: #1e3a34;
+}
+
+.comment-item__reply-form {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e8e3d8;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.comment-item__reply-form input,
+.comment-item__reply-form textarea {
+  padding: 0.6rem;
+  border: 1.5px solid #d9d1c3;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  background: #fff;
+}
+
+.comment-item__reply-form input:focus,
+.comment-item__reply-form textarea:focus {
+  outline: none;
+  border-color: #6d9482;
+}
+
+.comment-item__reply-form div {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.comment-item__reply-form button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+
+.comment-item__reply-form button[type="submit"] {
+  background: #1e3a34;
+  color: #fff;
+}
+
+.comment-item__reply-form button[type="submit"]:hover {
+  background: #2d5a4f;
+}
+
+.comment-item__reply-form button[type="button"] {
+  background: #f7f3ec;
+  color: #666;
+  border: 1px solid #d9d1c3;
+}
+
+.comment-item__replies {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e8e3d8;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.comment-item__reply {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  border-left: 3px solid #6d9482;
+}
+
+.comment-item__reply .comment-item__author {
+  margin-right: 0.75rem;
+}
+

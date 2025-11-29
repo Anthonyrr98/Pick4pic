@@ -1,0 +1,94 @@
+.publish-frequency-chart {
+  background: #fbf8f1;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.publish-frequency-chart h3 {
+  margin: 0 0 1.5rem;
+  color: #1e3a34;
+  font-size: 1.2rem;
+}
+
+.chart-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+  height: 200px;
+  padding: 1rem 0;
+}
+
+.chart-bar-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.chart-bar-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.chart-bar {
+  width: 100%;
+  background: linear-gradient(180deg, #6d9482 0%, #1e3a34 100%);
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  transition: all 0.3s ease;
+  min-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-bar:hover {
+  opacity: 0.8;
+  transform: scaleY(1.05);
+}
+
+.chart-bar-value {
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.chart-label {
+  font-size: 0.75rem;
+  color: #666;
+  text-align: center;
+}
+
+[data-theme='dark'] .publish-frequency-chart {
+  background: #333;
+}
+
+[data-theme='dark'] .publish-frequency-chart h3 {
+  color: #fff;
+}
+
+[data-theme='dark'] .chart-label {
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    height: 150px;
+    gap: 0.25rem;
+  }
+
+  .chart-label {
+    font-size: 0.65rem;
+  }
+
+  .chart-bar-value {
+    font-size: 0.65rem;
+  }
+}
+
